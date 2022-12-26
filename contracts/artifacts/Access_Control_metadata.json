@@ -125,13 +125,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "set30SecsSubLvl4",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -178,16 +171,6 @@
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
-						"name": "_creationDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_allowPeriod",
-						"type": "uint256"
-					},
-					{
 						"internalType": "bytes32",
 						"name": "_ClrLvl",
 						"type": "bytes32"
@@ -222,19 +205,6 @@
 					}
 				],
 				"name": "setNewObjClr",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_secs",
-						"type": "uint256"
-					}
-				],
-				"name": "setSubLvl4",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -294,11 +264,11 @@
 	},
 	"sources": {
 		"contracts/AccessControl.sol": {
-			"keccak256": "0x4d555e21a323138d2b20bfe5c5d1ea6c4405edf8bff84e1a1d0c4cffc6568294",
+			"keccak256": "0x092bb2369b4576a6992081d95f6be2b61ad4671ecfbdaff17fc4b991c02165c2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1392e96b72cb066d0d4f550a9cd6e6ae580bfd3c0a44e4e25098133bc03c692a",
-				"dweb:/ipfs/QmYs91DJJQBDnSziWBM9xFBk853Fonxr3gVHEewV8tNaNx"
+				"bzz-raw://f65692db6f1cf9dd3e8fb7f95fe088ee39e54c36c71fab24ae3bf9f03fcbad70",
+				"dweb:/ipfs/Qmf3dP5JbSKotjy1qZUhmZ6Ar2HXyPf49Z7h21UTVA1NJm"
 			]
 		},
 		"contracts/Libraries.sol": {

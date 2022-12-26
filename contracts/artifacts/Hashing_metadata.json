@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "currentUsrCnt",
+						"type": "uint256"
+					}
+				],
+				"name": "CountLog",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "bytes32",
+						"name": "addrHashed",
+						"type": "bytes32"
+					}
+				],
+				"name": "HashLog",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Libraries.sol": "Hashing"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Libraries.sol": {
+			"keccak256": "0x1b7a6893fe5d112cc45dd9b36ba5d174f4e85a8c34f69e78b40272ec79ddc3ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a56d9d2df1722c2b16754fcf55cdec23f634421e4f15d9ff8a10d3ca60bf3a2",
+				"dweb:/ipfs/QmQ26jSoQJfPqLxT6CvNkCM38d8yMQAgD49ydhH7JXPBoz"
+			]
+		}
+	},
+	"version": 1
+}

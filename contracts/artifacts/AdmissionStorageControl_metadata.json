@@ -1,0 +1,282 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_AccesssControlAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_AdmStrgAddr",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_subjectID",
+						"type": "uint16"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "HadmID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "int256",
+								"name": "AdmitTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DischTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DeathTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Type",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Discharge_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Insurance",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct IStrgAccess.PatientRecords",
+						"name": "addPnt",
+						"type": "tuple"
+					}
+				],
+				"name": "addNewPatient",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_subjectID",
+						"type": "uint256"
+					}
+				],
+				"name": "getAllRecords",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "HadmID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "int256",
+								"name": "AdmitTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DischTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DeathTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Type",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Discharge_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Insurance",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct IStrgAccess.PatientRecords[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_sig",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_subjectID",
+						"type": "uint256"
+					}
+				],
+				"name": "getLatestOneRec",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "HadmID",
+								"type": "uint256"
+							},
+							{
+								"internalType": "int256",
+								"name": "AdmitTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DischTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "DeathTime",
+								"type": "int256"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Type",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Admission_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Discharge_Location",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "Insurance",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct IStrgAccess.PatientRecords",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/AdmissionStorageControl.sol": "AdmissionStorageControl"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/AdmissionStorageControl.sol": {
+			"keccak256": "0x4eb7b802626d56978373d3458931b03cd54d194c7c006368fb7ef163df527115",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ec3cc5a53a9d4210fde1778947d007f882eb11c6f6217fc99f70f1bb1c2a2f4",
+				"dweb:/ipfs/QmRmx7jw8c9s41i7vUPMeBLJe8BD9VEuWgCjADM6RTJprS"
+			]
+		},
+		"contracts/Libraries.sol": {
+			"keccak256": "0x1b7a6893fe5d112cc45dd9b36ba5d174f4e85a8c34f69e78b40272ec79ddc3ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a56d9d2df1722c2b16754fcf55cdec23f634421e4f15d9ff8a10d3ca60bf3a2",
+				"dweb:/ipfs/QmQ26jSoQJfPqLxT6CvNkCM38d8yMQAgD49ydhH7JXPBoz"
+			]
+		}
+	},
+	"version": 1
+}
